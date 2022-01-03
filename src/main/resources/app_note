@@ -1,0 +1,20 @@
+code_verifier = "1UJ0CqM5DdfeElz4DYKVgP09uR26P4AF_HWd-OHPRVI"
+
+code_challenge = "dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc"
+
+###  AUTHORIZATION_CODE URI
+https://oauth2-spring-security-authser.herokuapp.com/oauth2/authorize
+?client_id=client1
+&redirect_uri=https://oidcdebugger.com/debug
+&scope=openid
+&response_type=code
+&response_mode=form_post
+&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc
+&code_challenge_method=S256
+
+
+### CREATE pfx key
+keytool -genkeypair -alias anhdungpham -keyalg RSA -keystore jwk_certification_key.pfx -storetype PKCS12 -keypass anhdungpham
+
+### CHECK pfx key
+keytool -list -keystore jwk_certification_key.pfx -storepass anhdungpham
