@@ -3,7 +3,7 @@ code_verifier = "1UJ0CqM5DdfeElz4DYKVgP09uR26P4AF_HWd-OHPRVI"
 code_challenge = "dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc"
 
 ###  AUTHORIZATION_CODE URI
-https://oauth2-spring-security-authser.herokuapp.com/oauth2/authorize
+https://oauth2-security-authserver.herokuapp.com/oauth2/authorize
 ?client_id=client1
 &redirect_uri=https://oidcdebugger.com/debug
 &scope=openid

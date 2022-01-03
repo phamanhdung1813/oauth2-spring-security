@@ -54,6 +54,8 @@ public class OAuth2ServerConfig {
                 .clientId("client1")
                 .clientSecret(passwordEncoder.encode("client1"))
                 .scope(OidcScopes.OPENID)
+                .scope("read")
+                .scope("write")
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
                 .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
