@@ -24,26 +24,13 @@
 ## OpenID scope with request param redirect_uri
 * 👉 NO redirect_uri (ERROR)
 
-https://oauth2-security-authserver.herokuapp.com/oauth2/authorize
-?client_id=client1
-&scope=openid
-&response_type=code
-&response_mode=form_post
-&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc
-&code_challenge_method=S256
+https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=client1&scope=openid&response_type=code&response_mode=form_post&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc&code_challenge_method=S256
 
 ![image](https://user-images.githubusercontent.com/71564211/147991768-134252bd-c631-487a-b57a-e2259c5d689a.png)
 
 * 👉 redirect_uri (authorization_code)
 
-https://oauth2-security-authserver.herokuapp.com/oauth2/authorize
-?client_id=client1
-&redirect_uri=https://oidcdebugger.com/debug
-&scope=openid
-&response_type=code
-&response_mode=form_post
-&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc
-&code_challenge_method=S256
+https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=client1&redirect_uri=https://oidcdebugger.com/debug&scope=openid&response_type=code&response_mode=form_post&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc&code_challenge_method=S256
 
 ![image](https://user-images.githubusercontent.com/71564211/147991830-5ffdfe2a-b6a8-4c7f-9fe8-4ed4dd4d700d.png)
 
@@ -53,13 +40,7 @@ https://oauth2-security-authserver.herokuapp.com/oauth2/authorize
 
 ## Other scope (read, write,...) dont need redirect_uri
 
-https://oauth2-security-authserver.herokuapp.com/oauth2/authorize
-?client_id=client1
-&scope=read
-&response_type=code
-&response_mode=form_post
-&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc
-&code_challenge_method=S256
+https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=client1&scope=read&response_type=code&response_mode=form_post&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc&code_challenge_method=S256
 
 ![image](https://user-images.githubusercontent.com/71564211/147992072-5dfa9cf9-63ca-4614-b00d-8af5f92a7239.png)
 
@@ -67,12 +48,7 @@ https://oauth2-security-authserver.herokuapp.com/oauth2/authorize
 
 ## OAuth2 without PKCE
 
-https://oauth2-security-authserver.herokuapp.com/oauth2/authorize
-?client_id=client1
-&redirect_uri=https://oidcdebugger.com/debug
-&scope=read
-&response_type=code
-&response_mode=form_post
+https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=client1&redirect_uri=https://oidcdebugger.com/debug&scope=read&response_type=code&response_mode=form_post
 
 ![image](https://user-images.githubusercontent.com/71564211/147992232-079579f8-9c3d-4363-bcf1-cb773df8a475.png)
 
