@@ -24,13 +24,13 @@
 ## OpenID scope with request param redirect_uri
 * 👉 NO redirect_uri (ERROR)
 
-https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=client1&scope=openid&response_type=code&response_mode=form_post&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc&code_challenge_method=S256
+### https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=client1&scope=openid&response_type=code&response_mode=form_post&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc&code_challenge_method=S256
 
 ![image](https://user-images.githubusercontent.com/71564211/147991768-134252bd-c631-487a-b57a-e2259c5d689a.png)
 
 * 👉 redirect_uri (authorization_code)
 
-https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=client1&redirect_uri=https://oidcdebugger.com/debug&scope=openid&response_type=code&response_mode=form_post&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc&code_challenge_method=S256
+### https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=client1&redirect_uri=https://oidcdebugger.com/debug&scope=openid&response_type=code&response_mode=form_post&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc&code_challenge_method=S256
 
 ![image](https://user-images.githubusercontent.com/71564211/147991830-5ffdfe2a-b6a8-4c7f-9fe8-4ed4dd4d700d.png)
 
@@ -40,7 +40,7 @@ https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=clie
 
 ## Other scopes (read, write,...) dont need redirect_uri
 
-https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=client1&scope=read&response_type=code&response_mode=form_post&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc&code_challenge_method=S256
+### https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=client1&scope=read&response_type=code&response_mode=form_post&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc&code_challenge_method=S256
 
 ![image](https://user-images.githubusercontent.com/71564211/147992072-5dfa9cf9-63ca-4614-b00d-8af5f92a7239.png)
 
@@ -50,7 +50,7 @@ https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=clie
 
 ## OAuth2 without PKCE
 
-https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=client1&redirect_uri=https://oidcdebugger.com/debug&scope=read&response_type=code&response_mode=form_post
+### https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=client1&redirect_uri=https://oidcdebugger.com/debug&scope=read&response_type=code&response_mode=form_post
 
 ![image](https://user-images.githubusercontent.com/71564211/147992232-079579f8-9c3d-4363-bcf1-cb773df8a475.png)
 
@@ -61,7 +61,7 @@ https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=clie
 * The Authorization Server validates the code_verifier with the received code_challenge and the code_challenge_method and issues an access token if the authentication is successful.
 
 ## Certification endpoint (PFX certification)
-https://oauth2-security-authserver.herokuapp.com/certification
+### https://oauth2-security-authserver.herokuapp.com/certification
 
 ![image](https://user-images.githubusercontent.com/71564211/147992553-1cd2e9c4-160f-4c0a-8761-0bd14a24be55.png)
 
@@ -69,7 +69,7 @@ https://oauth2-security-authserver.herokuapp.com/certification
 ## Refresh Token endpoint URL
 ![image](https://user-images.githubusercontent.com/71564211/147993311-c1f1f0d9-dec0-44d2-8c89-3f70395da634.png)
 
-https://oauth2-security-authserver.herokuapp.com/oauth2/token 
+### https://oauth2-security-authserver.herokuapp.com/oauth2/token 
 
 #### Using x-www-form-urlencoded with grant_type: refresh token and refresh_token:[refresh_token_value]
 
