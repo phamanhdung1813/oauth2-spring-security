@@ -38,13 +38,15 @@ https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=clie
 
 ![image](https://user-images.githubusercontent.com/71564211/147991976-a2d33b3b-f5c9-4be8-a54f-fb513a3f276b.png)
 
-## Other scope (read, write,...) dont need redirect_uri
+## Other scopes (read, write,...) dont need redirect_uri
 
 https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=client1&scope=read&response_type=code&response_mode=form_post&code_challenge=dsbodg7P8H_HWfnlRf2_SAX-AqzEYyhJDs2i5cLR6uc&code_challenge_method=S256
 
 ![image](https://user-images.githubusercontent.com/71564211/147992072-5dfa9cf9-63ca-4614-b00d-8af5f92a7239.png)
 
 ![image](https://user-images.githubusercontent.com/71564211/147992100-28e89ef4-c347-40a0-a8d8-725685bd0cde.png)
+
+![image](https://user-images.githubusercontent.com/71564211/147992677-1fa01657-d6cc-4ba2-9328-f3eaf89d341a.png)
 
 ## OAuth2 without PKCE
 
@@ -57,6 +59,29 @@ https://oauth2-security-authserver.herokuapp.com/oauth2/authorize?client_id=clie
 * The Authorization Server notes the code_challenge, and issues the code_challenge_method the authorization code.
 * The client sends an access token request along with the code_verifier.
 * The Authorization Server validates the code_verifier with the received code_challenge and the code_challenge_method and issues an access token if the authentication is successful.
+
+## Certification endpoint (PFX certification)
+https://oauth2-security-authserver.herokuapp.com/certification
+
+![image](https://user-images.githubusercontent.com/71564211/147992553-1cd2e9c4-160f-4c0a-8761-0bd14a24be55.png)
+
+
+## Refresh Token endpoint URL
+![image](https://user-images.githubusercontent.com/71564211/147993311-c1f1f0d9-dec0-44d2-8c89-3f70395da634.png)
+
+https://oauth2-security-authserver.herokuapp.com/oauth2/token 
+
+#### Using x-www-form-urlencoded with grant_type: refresh token and refresh_token:[refresh_token_value]
+
+![image](https://user-images.githubusercontent.com/71564211/147993290-2055efb1-a66c-479f-b18c-053b92405157.png)
+
+## Endpoint Security Test
+![image](https://user-images.githubusercontent.com/71564211/147993493-20acf546-2489-4240-b041-14659e655059.png)
+
+![image](https://user-images.githubusercontent.com/71564211/147993509-bdd19f50-849e-4bd7-b5af-7d655c86a53b.png)
+
+![image](https://user-images.githubusercontent.com/71564211/147993535-a71d8748-3fbf-44d9-832b-f4ae63d8a119.png)
+
 
 
 
